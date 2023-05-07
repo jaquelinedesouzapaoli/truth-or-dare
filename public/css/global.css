@@ -1,0 +1,84 @@
+@font-face {
+    font-family: 'Engravers Gothic Regular';
+    src: url(../inc/fonts/Engravers_Gothic_Regular.otf);
+  }
+body {
+    background-image: url(../background.jpg);
+    color: #fff;
+    font-family: 'Engravers Gothic Regular';
+    text-align: center;
+    padding: 3rem;
+}
+header{
+    padding: 1rem;
+}
+header .col-sm-3.float-right {
+    text-align: right;
+}
+header .col-sm-6 {
+    display: inline-flex;
+}
+.detail {
+    border: 1px solid #e6e6e6;
+}
+select {
+    padding: 0.7rem;
+    border-radius: 7px;
+    min-width: 30rem;
+}
+button.next-phrase {
+    padding: 0.7rem;
+    border-radius: 7px;
+    background: white;
+    min-width: 30rem;
+}
+button.next-phrase:hover {
+    background: grey;
+    color: white;
+    border: 1px solid white;
+    transition-delay: 250ms;
+}
+#root > .container {
+    background-color: #282727;
+    border: 1px solid;
+    border-radius: 10px;
+    max-width: 50%;
+    padding: 1rem;
+    box-shadow: 4px -5px 5px #6e6e6e;
+}
+.container .phrase{
+    min-height: 270px;
+}
+.container .phrase p {
+    padding: 4rem 0;
+    color: deeppink;
+    font-size: 2rem;
+}
+button {
+    color: #FFF;
+    border: 1px solid #FFF;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;
+    margin: 0 1rem;
+}
+button.verdade{
+    background: rgb(0,6,36);
+    background: linear-gradient(90deg, rgba(0,6,36,0.7567401960784313) 1%, rgba(82,9,121,0.896796218487395) 48%, rgba(188,0,255,0.6446953781512605) 100%);
+}
+button.desafio{
+    background: rgb(36,2,0);
+background: linear-gradient(90deg, rgba(36,2,0,0.7567401960784313) 1%, rgba(250,104,14,0.896796218487395) 48%, rgba(255,0,1,0.6446953781512605) 100%);
+}
+
+@media screen and (min-width: 100px) and (max-width: 1024px){
+    #root > .container{
+        max-width: 100%;
+    }
+    button {
+        width: 100%;
+        padding: 1rem;
+        font-size: 2rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}
